@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: Milkshake;
+    src: url("fonts/Milkshake.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Blackjack;
+    src: url("fonts/blackjack.otf") format("opentype");
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background: #F5F2F4;
+    background: url(img/pink-clouds.png) no-repeat top center;
+    background-size: cover;
+}
+
+/*Link Styles*/
+
+a {
+    text-decoration: none;
+}
+
+a:hover , .card a:hover {
+   color: pink; 
+}
+
+.home>a {
+    color: white;
+}
+
+.experience>a {
+    color: white;
+}
+
+.contact>a{
+    color: white;
+}
+
+/*Sections*/
+
+.nav {
+    width: 100%;
+    background: #1a2c50;
+    min-height: 30px;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    border-top: #1a2c50 solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.navside {
+    display: inline-flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+.nav a:hover {
+    color: pink
+}
+
+header {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    overflow: hidden;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    border-left: #1a2c50 solid;
+    border-bottom:#1a2c50 solid;
+    border-right: #1a2c50 solid;;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+header i {
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+header a{
+    color:#1a2c50;
+}
+
+header a:hover{
+    color:white
+}
+
+.profile-image {
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.tag-name{
+    background-color: transparent;
+    font-family: Milkshake;
+    color: black;
+    padding: 5px;
+    display: table;
+    margin: 18px auto;
+}
+
+.tag-name:hover{
+    color: white;
+}
+
+.about{
+    width: 100%;
+    min-height: 30px;
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+    border: #1a2c50 solid;
+    border-radius: 6px;
+    background-image: url(img/shades-blue.jpg);
+    opacity: 0.8;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.about>p{
+    color:white;
+}
+
+.about>h2{
+    color:white;
+}
+
+ul.skills {
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+    background: #0399ff;
+}
+
+.copyright{
+    font-weight: bold;
+    text-align: center;
+    color: #1a2c50;
+}
+
+/*Media*/
+@media screen and (min-width: 375px){
+    .copyright{
+        font-weight: bold;
+        text-align: center;
+    }
+ }
+
+@media screen and (max-width: 720px) {
+    .nav {
+        max-width: 1200px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav .name {
+        display: block;
+        color: white;
+    }
+    main {
+        text-align: left;
+    }
+    main p {
+        line-height: 1.6em;
+    }
+    footer {
+        font-size: 1.3em;
+        max-width: 1200px;
+        margin: 40px auto;
+        text-align: center;
+        font-weight: bold;
+    }
+}
